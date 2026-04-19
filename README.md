@@ -93,3 +93,39 @@ Az adatbázis a következő fő táblákat tartalmazza:
 
 ```bash
 npm install
+```
+
+### Szerver indítása
+
+```bash
+node server.js
+```
+A szerver alapértelmezetten a 3000 porton indul.
+
+### Tesztek futtatása
+
+```bash
+npm test
+```
+
+A projektben jelenleg 2 automatizált backend teszt található:
+
+- `GET /api/tasks`
+- `POST /api/tasks`
+
+## Docker használata
+
+### Docker image buildelése
+
+```bash
+sudo docker build -t feladatkezelo .
+```
+
+### Docker konténer futtatása
+
+```bash
+sudo docker run --rm --name feladatkezelo_run -p 3000:3000 --init feladatkezelo
+```
+
+Ezután az alkalmazás böngészőből elérhető a következő címen:
+http://localhost:3000
