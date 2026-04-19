@@ -16,6 +16,7 @@ A feladatokhoz delegált személy rendelhető, státusz állítható, valamint f
 - JavaScript
 - Jest
 - Supertest
+- Docker
 
 ## Megvalósított funkciók
 
@@ -28,7 +29,9 @@ A feladatokhoz delegált személy rendelhető, státusz állítható, valamint f
 - Folyamat-megjegyzések hozzáadása
 - Megjegyzések listázása
 - Létrehozási idő megjelenítése
+- Reszponzív felület
 - Automatizált backend tesztek futtatása
+- Docker alapú futtatás
 
 ## Projekt felépítése
 
@@ -39,6 +42,8 @@ A feladatokhoz delegált személy rendelhető, státusz állítható, valamint f
 - `public/script.js` – kliensoldali működés
 - `database/WEBprogramozas_project.db` – SQLite adatbázis fájl
 - `tests/tasks.test.js` – automatizált backend tesztek
+- `Dockerfile` – Docker konténerizáció leírása
+- `.dockerignore` – Docker buildből kizárt fájlok
 
 ## Adatbázis szerkezete
 
@@ -85,5 +90,6 @@ Az adatbázis a következő fő táblákat tartalmazza:
 ## Telepítés és indítás
 
 ### Függőségek telepítése
+
 ```bash
 npm install
