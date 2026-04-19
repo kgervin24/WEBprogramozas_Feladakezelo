@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladatkezelő</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feladatkezelő</h1>
+
+        <!-- Feladat létrehozó rész -->
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Feladat neve...">
+
+            <!-- Többsoros mező a részletes leíráshoz -->
+            <textarea id="descriptionInput" placeholder="Feladat leírása..."></textarea>
+
+            <select id="personSelect">
+                <option value="">Válassz delegált személyt...</option>
+            </select>
+            
+
+            <button id="addButton">Hozzáadás</button>
+        </div>
+
+        <!-- Feladatlista -->
+        <ul class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

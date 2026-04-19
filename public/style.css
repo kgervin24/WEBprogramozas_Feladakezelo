@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-section input,
+.input-section select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-section button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-section textarea {
+    padding: 10px;
+    font-size: 16px;
+    min-height: 80px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+.task-description {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.task-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.task-status {
+    margin-bottom: 5px;
+}
+
+.task-person {
+    margin-bottom: 10px;
+}
+
+.task-created-at {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.button-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-area button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.task-message {
+    margin-top: 10px;
+    color: #c0392b;
+    font-size: 14px;
+}
+
+.button-area button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.status-new {
+    color: #d35400;
+    font-weight: bold;
+}
+
+.status-in-progress {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.status-done {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.note-title {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.note-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.note-button {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.note-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.note-list li {
+    background-color: #f8f9fa;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.edit-area {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.edit-input,
+.edit-select,
+.edit-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.edit-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.save-edit-button,
+.cancel-edit-button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* ----------------------------------
+   Reszponzív finomítás mobilra
+---------------------------------- */
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .button-area {
+        flex-direction: column;
+    }
+
+    .button-area button {
+        width: 100%;
+    }
+
+    .note-button,
+    .save-edit-button,
+    .cancel-edit-button,
+    .input-section button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+    }
+
+    .note-input,
+    .edit-input,
+    .edit-select,
+    .edit-textarea,
+    .input-section input,
+    .input-section select,
+    .input-section textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
