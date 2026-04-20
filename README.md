@@ -124,7 +124,7 @@ sudo docker build -t feladatkezelo .
 ### Docker konténer futtatása
 
 ```bash
-sudo docker run --rm --name feladatkezelo_run -p 3000:3000 --init feladatkezelo
+sudo docker run --rm --name feladatkezelo_run -p 3000:3000 --init -v ~/WEBprog_Feladatkezelo/database:/app/database feladatkezelo
 ```
 
 Ezután az alkalmazás böngészőből elérhető a következő címen:

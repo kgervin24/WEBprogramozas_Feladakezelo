@@ -74,11 +74,11 @@ INSERT INTO users (name) VALUES ('Szomja Zoltán');
 -- Minta feladatok (opcionális, de hasznos teszthez/bemutatáshoz)
 -- =========================================
 INSERT INTO tasks (task_name, description, user_id, state_id, created_at)
-VALUES ('Első minta feladat', 'Ez egy példa feladat az adatbázis inicializálásához.', 1, 1, '2026.04.20 10:00');
+VALUES ('Első minta feladat', 'Ez egy példa feladat az adatbázis inicializálásához.', 1, 1, '2099.04.20 10:00');
 
 INSERT INTO tasks (task_name, description, user_id, state_id, created_at)
-VALUES ('Második minta feladat', 'Ez egy folyamatban lévő példa feladat.', 2, 2, '2026.04.20 10:15');
+VALUES ('Második minta feladat', 'Ez egy folyamatban lévő példa feladat.', 2, 2, '2099.04.20 10:15');
 
 -- Minta megjegyzések
 INSERT INTO task_notes (task_id, note_text, created_at)
-VALUES (2, 'Első folyamat-megjegyzés a minta feladathoz.', '2026.04.20 10:20');
+VALUES (2, 'Első folyamat-megjegyzés a minta feladathoz.', '2099.04.20 10:20');
