@@ -129,3 +129,25 @@ sudo docker run --rm --name feladatkezelo_run -p 3000:3000 --init -v ~/WEBprog_F
 
 Ezután az alkalmazás böngészőből elérhető a következő címen:
 http://localhost:3000
+
+### SQL script
+
+- `database/init.sql` – adatbázis létrehozásához és alapadatok betöltéséhez szükséges SQL script
+- `.github/workflows/nodejs-ci.yml` – GitHub Actions CI workflow
+
+### CI/CD
+
+A projekt GitHub Actions alapú CI workflow-t használ.
+
+A workflow a következőket végzi el:
+- a forráskód letöltése
+- a Node.js környezet beállítása
+- a függőségek telepítése
+- az automatizált tesztek futtatása
+
+A workflow fájl helye:
+- `.github/workflows/nodejs-ci.yml`
+
+### Adatbázis inicializálása
+
+Az adatbázis létrehozásához és az alapadatok betöltéséhez a `database/init.sql` fájl használható.
